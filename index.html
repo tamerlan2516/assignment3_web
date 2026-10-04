@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Task 0 -->
+<section class="container py-4">
+    <h1>Responsive Web Design</h1>
+    <p class="intro">This page changes its size and layout for different screens.</p>
+</section>
+
+<!-- Task 1 -->
+<section class="container py-4">
+    <h2>Task 1 - Responsive Boxes</h2>
+
+    <div class="box-container">
+        <div class="simple-box">Box 1</div>
+        <div class="simple-box">Box 2</div>
+        <div class="simple-box">Box 3</div>
+    </div>
+</section>
+
+<!-- Task 2 -->
+<section class="container py-4">
+    <h2>Task 2 - Bootstrap Columns</h2>
+
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card simple-card">
+                <div class="card-body">
+                    <h3>Project 1</h3>
+                    <p>Simple website project.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card simple-card">
+                <div class="card-body">
+                    <h3>Project 2</h3>
+                    <p>Simple Java project.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card simple-card">
+                <div class="card-body">
+                    <h3>Project 3</h3>
+                    <p>Simple database project.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Task 3 -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Task 4 -->
+<section class="container portfolio py-5">
+    <div class="row">
+
+        <main class="col-12 col-lg-8" id="projects">
+            <h2>My Projects</h2>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card simple-card mb-4">
+                        <div class="card-body">
+                            <h3>Car Rental System</h3>
+                            <p>A simple system for renting cars.</p>
+                            <button class="btn btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card simple-card mb-4">
+                        <div class="card-body">
+                            <h3>Product Catalog</h3>
+                            <p>A website for displaying products.</p>
+                            <button class="btn btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card simple-card mb-4">
+                        <div class="card-body">
+                            <h3>Quiz System</h3>
+                            <p>A simple online quiz project.</p>
+                            <button class="btn btn-primary">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="col-12 col-lg-4" id="about">
+            <div class="sidebar">
+                <h2>About Me</h2>
+                <p>I am a university student interested in programming and web development.</p>
+
+                <div id="contact">
+                    <h3>Contact</h3>
+                    <p>Email: student@example.com</p>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

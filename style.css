@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.intro {
+    font-size: 20px;
+}
+
+.box-container {
+    display: flex;
+    gap: 20px;
+}
+
+.simple-box {
+    background: lightgray;
+    padding: 40px;
+    text-align: center;
+    flex: 1;
+}
+
+.simple-card {
+    height: 100%;
+}
+
+.sidebar {
+    background: #f2f2f2;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .simple-box {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    .box-container {
+        flex-wrap: wrap;
+    }
+
+    .simple-box {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
